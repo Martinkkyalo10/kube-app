@@ -29,8 +29,6 @@ spec:
                 secretKeyRef:
                   name: app-secret
                   key: db-pass
-            - name: MYSQL_ROOT_PASSWORD
-              value: "vprodbpass"
       initContainers:
         - name: busybox
           image: busybox:latest
